@@ -1,15 +1,21 @@
 <template>
   <div id="app">
-    <Register />
+    <router-view />
   </div>
 </template>
 
 <script>
-import Register from './components/Register.vue'
-
 export default {
-  components: {
-    Register,
-  },
+  name: 'App',
 }
 </script>
+
+<style>
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+</style>
